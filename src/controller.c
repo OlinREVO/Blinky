@@ -18,7 +18,7 @@ int main (void) {
     //set OC0B (PE1, pin 10) as output.
     DDRE |= _BV(PE1);
 
-    for (;;) {
+    while(1) {
         //Read from ADC
         ADCSRA |=  _BV(ADSC);
         //Wait for ADC reading

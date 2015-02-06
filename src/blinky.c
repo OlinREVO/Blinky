@@ -6,7 +6,7 @@ int main (void) {
     // Set PE1 to output
     DDRE |= _BV(PE1);
 
-    for (;;) {
+    while(1) {
         //Toggle PE1 (pin 10)
         PORTE ^= _BV(PE1);
         _delay_ms(500);
